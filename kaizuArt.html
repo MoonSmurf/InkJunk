@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+/*
+Mary Ashley Kovacevich
+11-1-2019
+KaizuArt.html
+Home page for Kaizu's Art. Under construction for new art from artist
+*/
+-->
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Kaizu's Art Home Page</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/styles3.css">
+  </head>
+  <body>
+    <header>
+
+        <img src="images/kaizuHeader.jpg" alt="Kaizu's Art Main Page"  class="headerK">
+      <nav class="topMenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="schedule.html">Convention Schedule</a></li>
+          <li><a href="#">Store</a></li>
+        </ul>
+      </nav>
+
+    </header>
+    <img src="images/construction.png" alt="UNDER CONSTRUCTION" style="100%" class="construct">
+
+<h1>Signup to be notified when construction is complete</h1>
+    <form action="index.html" method="post">
+<fieldset id="uInfo">
+<legend>Information</legend>
+<div>
+<label for="nameB">User Name*</label>
+<input type="text" id="nameB" name="stuName" placeholder="Tag Name" required/>
+</div>
+
+<div>
+<label for="eMail">Email*</label>
+<input type="email" id="eMail" name="stuMail"/>
+<input type="checkbox" id="eNews" name="pleaseSend" />
+<label for="eNews">Add me to mailing list</label>
+</div>
+</fieldset>
+<fieldset id="genQ">
+<legend>General Questions</legend>
+<div>
+<label for="sClass">Prefered Social Media</label>
+<select name="sList" id="sClass">
+  <option value="tumblr">Tumblr</option>
+  <option value="tweet">Twitter</option>
+  <option value="insta">Instagram</option>
+  <option value="facebook">Facebook</option>
+</select>
+</div>
+<div>
+<label>Are you interested in joining my Patreon?</label>
+<input type="radio" id="oYes" name="question">
+<label>Yes</label>
+<input type="radio" id="oNo" name="question">
+<label>No</label>
+</div>
+<div>
+<label>What are some coventions you would be interested in seeingus attend?</label>
+<textarea name="experience" id="aYes" placeholder="Name and locations of convetions"></textarea>
+</div>
+</fieldset>
+<div>
+<input type="submit" value="Signup">
+</div>
+</form>
+          <footer>Website created with permision from artists.</footer>
+  </body>
+</html>
