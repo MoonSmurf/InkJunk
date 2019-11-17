@@ -1,0 +1,209 @@
+@charset "UTF-8";
+/*
+Mary Ashley Kovacevich
+11-1-2019
+styles.css
+Style step up for InkJunk Home  pages
+*/
+/*
+=====================
+Main Navigation Setup
+=====================
+*/
+nav.topMenu{
+  display: flex;
+  -webkit-display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+  background: lightyellow;
+  border-bottom: 2px dotted gray;
+  padding-left: 5px;
+  margin-bottom:  10px;
+}
+nav.topMenu ul{
+  list-style: none;
+  display: flex;
+  -webkit-display: flex;
+}
+nav.topMenu ul li {
+padding: 1.5em;
+flex: auto;
+text-align: center;
+vertical-align: baseline;
+}
+nav.topMenu ul li:hover{
+background: lavender;
+}
+nav.topMenu ul li a {
+text-decoration: none;
+color: slateblue;
+}
+nav.topMenu ul li a:hover{
+color: hotpink;
+}
+/*
+=========================
+Main Navigation Setup End
+=========================
+*/
+/*
+===================
+Design Styles Setup
+===================
+*/
+body h1{
+  color: navy;
+  text-shadow: MediumTurquoise  3px 3px 2px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif ;
+  font-size: 36pt;
+  text-align: center;
+  padding: 25px;
+}
+body h2{
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
+  font-size: 15pt;
+}
+body h2 a{
+  text-decoration: none;
+}
+
+/*
+==================================
+Artist Icon Side by Side Nav Setup
+==================================
+*/
+#containThis {
+	text-align: center;
+	width: 100%;
+	padding: 35px;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*Picture icon navigation on Home page*/
+.ccContainer{
+  position: relative;
+  width: 100%;
+  max-width:500px;
+}
+.image1{
+  border-radius: 15px;
+  display: block;
+  width: auto;
+  height: auto;
+}
+.overlay1 {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 400px;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+.ccContainer:hover .overlay1{
+  opacity: 1;
+  border-radius:  0px 0px 15px 15px;
+}
+.kaizuContainer{
+  position: relative;
+  width: 100%;
+  max-width:500px;
+}
+.image2 {
+  border-radius: 15px;
+  display: block;
+  width: auto;
+  height: auto;
+}
+.overlay2 {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 400px;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+.kaizuContainer:hover .overlay2{
+  opacity: 1;
+  border-radius:  0px 0px 15px 15px;
+}
+.ccContainer, .kaizuContainer {
+	width: auto;
+	height: auto;
+	padding-right: 15px;
+	display: inline-block;
+}
+/*
+============
+Cellphones
+============
+*/
+@media all and (max-width: 480px) {
+
+
+    body h1, h2 {
+      padding: 5px;
+      margin: 10px;
+    }
+  header img {
+    display: flex;
+    flex: 1 1 50%;
+  }
+#containThis {
+	text-align: center;
+	width: 100%;
+	padding: 15px;
+}
+.image1, .image2 {
+	display: block;
+	width: 125px;
+	height: 125px;
+}
+.overlay1, .overlay2{
+display: block;
+width: 125px;
+height: auto;
+}
+nav.topMenu{
+  display: flex;
+  -webkit-display: flex;
+  font-size: 1em;
+  background: lightyellow;
+  border-bottom: 2px dotted gray;
+  justify-content: space-around;
+}
+nav.topMenu ul {
+
+  list-style: none;
+  display: flex;
+  -webkit-display: flex;
+}
+nav.topMenu ul li {
+  padding: 0.5em;
+  flex: auto;
+  text-align: center;
+  vertical-align: baseline;
+}
+nav.topMenu ul li a {
+  text-decoration: none;
+  color: slateblue;
+}
+}
+/*
+=================
+Cellphones  End
+=================
+*/

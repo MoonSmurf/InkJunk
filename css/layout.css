@@ -1,0 +1,48 @@
+@charset "utf-8";
+/*
+Mary Ashley Kovacevich
+11-1-2019
+layout.css
+layout setup for all webpages
+*/
+*{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  background-image: url(glow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  box-sizing: border-box;
+  border: 0px;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+header{
+  display: block;
+  background: lightyellow;
+}
+header h1{
+  text-shadow: silver 3px 3px 2px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif ;
+	float: left;
+	text-align: center;
+	font-size: 36px;
+	padding:25px;
+	margin: 30px;
+}
+nav {
+  display: block;
+  width: auto;
+  vertical-align: baseline;
+}
+
+footer{
+  display: block;
+  background: lightyellow;
+  font-size: 1em;
+  text-align: center;
+}

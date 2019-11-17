@@ -1,0 +1,300 @@
+@charset "UTF-8";
+/*
+Mary Ashley Kovacevich
+11-1-2019
+sweerBv1_styles.css
+Style step up for Sweet Beginnings Volume 1
+includes styles for video and small devices
+*/
+/*
+=====================
+Main Navigation Setup
+=====================
+*/
+nav.topMenu{
+  display: flex;
+  -webkit-display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+  background: lightyellow;
+  border-bottom: 2px dotted gray;
+  padding-left: 5px;
+}
+nav.topMenu ul{
+  list-style: none;
+  display: flex;
+  -webkit-display: flex;
+}
+nav.topMenu ul li {
+padding: 1.5em;
+flex: auto;
+text-align: center;
+vertical-align: baseline;
+}
+nav.topMenu ul li:hover{
+background: lavender;
+}
+nav.topMenu ul li a {
+text-decoration: none;
+color: slateblue;
+}
+nav.topMenu ul li a:hover{
+color: hotpink;
+}
+/*
+=========================
+Main Navigation Setup End
+=========================
+*/
+/*
+=========================
+CrimChains Navigation Setup
+=========================
+*/
+.ccMenu {
+    position: relative;
+    display: inline-block;
+    background: lavender;
+    border-radius: 0px 0px 17px 17px;
+    text-align: center;
+    align-items: baseline;
+    width: 100%;
+    color: crimson;
+}
+.ccMenu ul {
+  display: inline-flex;
+  list-style: none;
+
+}
+.ccMenu ul li {
+  width: auto;
+  margin: 3px;
+  padding: 5px;
+  vertical-align: baseline;
+}
+.ccMenu ul li a {
+  text-decoration: none;
+  color: crimson;
+}
+.ccOriginals {
+  display: none;
+
+}
+.ccMenu ul li:hover .ccOriginals {
+  display: block;
+  position: absolute;
+  float: left;
+  line-height: 13px;
+  border-radius: 0px 0px 15px 15px;
+  background: lavender;
+  margin-left: -25px;
+}
+.ccMenu ul li:hover .ccOriginals ul {
+  display: block;
+  margin: 10px;
+}
+.ccMenu ul li:hover .ccOriginals ul li {
+padding: 5px;
+background: transparent;
+}
+.ccMenu ul li:hover .ccOriginals ul li a:hover {
+  color: slateblue;
+}
+
+/*Original Art The Bois sub Menu*/
+
+  .bMenu {
+  display: none;
+}
+.ccMenu ul li:hover .bMenu {
+  display: block;
+  position: absolute;
+  float: left;
+  line-height: 13px;
+  border-radius: 0px 0px 15px 15px;
+  background: lavender;
+  margin-left: -25px;
+}
+.ccMenu ul li:hover .bMenu ul {
+  display: block;
+  margin: 10px;
+}
+.ccMenu ul li:hover .bMenu ul li {
+padding: 5px;
+background: transparent;
+}
+.ccMenu ul li:hover .bMenu ul li a:hover {
+  color: slateblue;
+}
+
+/*Fan Art drop down set up*/
+.ccFanA {
+  display: none;
+}
+.ccMenu ul li:hover .ccFanA {
+  display: block;
+  position: absolute;
+  float: left;
+  line-height: 10px;
+  border-radius: 0px 0px 15px 15px;
+  background: lavender;
+  margin-left: -25px;
+}
+.ccMenu ul li:hover .ccFanA ul {
+  display: block;
+  margin: 10px;
+}
+.ccMenu ul li:hover .ccFanA ul li {
+padding: 5px;
+background: transparent;
+}
+.ccMenu ul li:hover .ccFanA ul li a:hover {
+  color: slateblue;
+}
+/*
+================================
+CrimChains Navigation Setup End
+================================
+*/
+/*
+===================
+Design Styles Setup
+===================
+*/
+body h1{
+  color: mintcream;
+  text-shadow: MediumVioletRed  3px 3px 2px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif ;
+  font-size: 36pt;
+  text-align: center;
+  padding: 25px;
+
+}
+body h2{
+  padding: 10px;
+  margin: 5px;
+  font-size: 15pt;
+}
+body h3{
+  padding: 10px;
+  margin: 5px;
+  font-size: 13pt;
+  color: darkblue;
+}
+section h2{
+    font-size: 25pt;
+    color: navy;
+}
+.deer{
+  display: block;
+  width: 50%;
+  border-radius: 0px 0px 3px 3px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sweetcontainer img{
+  width: 200px;
+  padding: 5px;
+}
+.sweetcontainer img:hover{
+  transform: scale(1.1);
+  transition: 1s;
+}
+/*
+===========
+Video Setup
+===========
+*/
+video{
+	display: block;
+	width: 75%;
+}
+.sbVideo{
+	 display: block;
+	 padding: 20px;
+	 border-radius: 15px;
+ }
+ .sbVideo > h2{
+	 color: darkred;
+  text-shadow: mintcream  2px 2px 2px;
+	 font: 2em serif;
+	 margin: auto 15px;
+ }
+ .sbVideo > h3{
+	 margin: auto 15px;
+ }
+ /*
+ ================
+ Video Setup End
+ ================
+ */
+/*
+============
+Cellphones
+============
+*/
+
+@media all and (max-width: 480px){
+
+  body h1, h2 {
+    padding: 5px;
+    margin: 10px;
+  }
+header img {
+  display: flex;
+  flex: 1 1 50%;
+}
+nav.topMenu{
+  display: flex;
+  -webkit-display: flex;
+  font-size: 1em;
+  background: lightyellow;
+  border-bottom: 2px dotted gray;
+  justify-content: space-around;
+}
+nav.topMenu ul {
+
+  list-style: none;
+  display: flex;
+  -webkit-display: flex;
+}
+nav.topMenu ul li {
+  padding: 0.5em;
+  flex: auto;
+  text-align: center;
+  vertical-align: baseline;
+}
+nav.topMenu ul li a {
+  text-decoration: none;
+  color: slateblue;
+}
+/*
+===========
+Video Setup
+===========
+*/
+video{
+	display: block;
+	width: 100%;
+}
+.sbVideo{
+	 display: block;
+	 padding: 20px;
+	 border-radius: 15px;
+ }
+ .sbVideo > h2{
+	 color: darkred;
+  text-shadow: mintcream  2px 2px 2px;
+	 font: 2em serif;
+	 margin: auto 15px;
+ }
+ .sbVideo > h3{
+	 margin: auto 15px;
+ }
+ /*
+ ================
+ Video Setup End
+ ================
+ */
+
+}

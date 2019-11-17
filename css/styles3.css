@@ -1,0 +1,206 @@
+@charset "UTF-8";
+/*
+Mary Ashley Kovacevich
+11-1-2019
+styles3.css
+Style stepup for Kaizu Art pages. Includes Cellphone media query.
+Page underconstruction for new images from artist
+*/
+
+
+
+/*
+=====================
+Main Navigation Setup
+=====================
+*/
+nav.topMenu{
+  display: flex;
+  -webkit-display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+  background: lightyellow;
+  border-bottom: 2px dotted gray;
+  padding-left: 5px;
+  margin-bottom:  10px;
+}
+nav.topMenu ul{
+  list-style: none;
+  display: flex;
+  -webkit-display: flex;
+}
+nav.topMenu ul li {
+padding: 1.5em;
+flex: auto;
+text-align: center;
+vertical-align: baseline;
+}
+nav.topMenu ul li:hover{
+background: lavender;
+}
+nav.topMenu ul li a {
+text-decoration: none;
+color: slateblue;
+}
+nav.topMenu ul li a:hover{
+color: hotpink;
+}
+/*
+=========================
+Main Navigation Setup End
+=========================
+*/
+/*
+===================
+Design Styles Setup
+===================
+*/
+body h1{
+  color: DarkMagenta ;
+  text-shadow: silver  3px 3px 2px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif ;
+  font-size: 32pt;
+  text-align: center;
+  padding: 25px;
+}
+body h2{
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
+  font-size: 15pt;
+}
+.headerK{
+  display: block;
+  width: 50%;
+  border-radius: 0px 0px 3px 3px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.construct{
+  display: block;
+  width: 25%;
+  border-radius: 0px 0px 3px 3px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*
+===================
+ Form Layout Styles
+===================
+*/
+
+form {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-flow: row wrap;
+   flex-flow: row wrap;
+}
+
+fieldset {
+   background-color: honeydew;
+   -webkit-flex: 1 1 300px;
+   flex: 1 1 300px;
+   margin: 10px;
+}
+
+div {
+   margin: 5px;
+   width: 100%;
+}
+
+legend {
+   color: lightslategray;
+   background-color: lightpink;
+}
+
+fieldset#uInfo label, fieldset#genQ label {
+   margin-bottom: 10px;
+   width: 100%;
+}
+
+textarea {
+  background-color: oldlace;
+   display: block;
+   width: 90%;
+   height: 100px;
+}
+
+input[type="submit"] {
+  background-color: mistyrose;
+  border-radius: 13px;
+   height: 50px;
+   width: 200px;
+}
+/*form validate*/
+input:focus, select:focus, textarea:focus {
+  background-color: oldlace;
+}
+input#nameB:focus:valid,
+input#pNum:focus:valid{
+  background: rgb(220,255,220);
+}
+input#nameB:focus:invalid,
+input#pNum:focus:invalid{
+  background: rgb(255,230,230);
+}
+/*
+=======================
+ Form Layout Styles End
+=======================
+*/
+
+/*
+============
+Cellphones
+============
+*/
+@media all and (max-width: 480px) {
+
+
+    body h1, h2 {
+      padding: 5px;
+      margin: 10px;
+    }
+  header img {
+    display: flex;
+    flex: 1 1 50%;
+  }
+  body h1{
+    color: beige;
+    font-size: 14pt;
+    text-align: center;
+  }
+.construct{
+  width: 350px;
+}
+
+nav.topMenu{
+  display: flex;
+  -webkit-display: flex;
+  font-size: 1em;
+  background: lightyellow;
+  border-bottom: 2px dotted gray;
+  justify-content: space-around;
+}
+nav.topMenu ul {
+
+  list-style: none;
+  display: flex;
+  -webkit-display: flex;
+}
+nav.topMenu ul li {
+  padding: 0.5em;
+  flex: auto;
+  text-align: center;
+  vertical-align: baseline;
+}
+nav.topMenu ul li a {
+  text-decoration: none;
+  color: slateblue;
+}
+}
+/*
+=================
+Cellphones  End
+=================
+*/
