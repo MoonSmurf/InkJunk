@@ -1,53 +1,62 @@
 @charset "UTF-8";
-* {
-    box-sizing: border-box;
-    font-family: Raleway;
-    color: #777;
+/*
+Mary Ashley Kovacevich
+11-1-2019
+styles.css
+Style step up for InkJunk Home  pages
+*/
+/*
+=====================
+Main Navigation Setup
+=====================
+*/
+nav.topMenu{
+  display: flex;
+  -webkit-display: flex;
+  justify-content: center;
+  font-size: 1.5em;
+  background: lightyellow;
+  border-bottom: 2px dotted gray;
+  padding-left: 5px;
+  margin-bottom:  10px;
+}
+nav.topMenu ul{
+  list-style: none;
+  display: flex;
+  -webkit-display: flex;
+}
+nav.topMenu ul li {
+padding: 1.5em;
+flex: auto;
+text-align: center;
+vertical-align: baseline;
+}
+nav.topMenu ul li:hover{
+background: lavender;
+}
+nav.topMenu ul li a {
+text-decoration: none;
+color: slateblue;
+}
+nav.topMenu ul li a:hover{
+color: hotpink;
+}
+/*
+=========================
+Main Navigation Setup End
+=========================
+*/
+
+
+
+
+*{
+  padding: 5px;
+  margin: 10px;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-    min-height: 100%;
-}
 
-.nav ul {
-    margin: 0;
-}
 
-.nav li {
-    display: inline;
-}
-
-.nav a {
-    display: inline-block;
-    padding: .5em;
-    color: white;
-    text-decoration: none;
-}
-
-.main-nav {
-    text-align: center;
-    font-size: 1.1em;
-    font-weight: lighter;
-    border-bottom: 1px solid rgba(255, 255, 255, .3)
-}
-
-.main-nav li {
-    padding: 0 5%;
-}
-
-.nav a:hover {
-    background-color: rgba(255, 255, 255, .3)
-}
-
-.main-header {
-    background-color: rgba(0, 0, 0, .6);
-    background-image: url("Images/Header Background.jpg");
-    background-blend-mode: multiply;
-    background-size: cover;
-    padding-bottom: 30px;
-}
 
 .band-name {
     text-align: center;
@@ -304,3 +313,50 @@ html, body {
     margin: 40px auto 80px auto;
     font-size: 1.75em;
 }
+/*
+============
+Cellphones
+============
+*/
+@media all and (max-width: 480px) {
+
+
+    body h1, h2 {
+      padding: 5px;
+      margin: 10px;
+    }
+  header img {
+    display: flex;
+    flex: 1 1 50%;
+  }
+
+nav.topMenu{
+  display: flex;
+  -webkit-display: flex;
+  font-size: 1em;
+  background: lightyellow;
+  border-bottom: 2px dotted gray;
+  justify-content: space-around;
+}
+nav.topMenu ul {
+
+  list-style: none;
+  display: flex;
+  -webkit-display: flex;
+}
+nav.topMenu ul li {
+  padding: 0.5em;
+  flex: auto;
+  text-align: center;
+  vertical-align: baseline;
+}
+nav.topMenu ul li a {
+  text-decoration: none;
+  color: slateblue;
+}
+}
+/*
+=================
+Cellphones  End
+=================
+*/
