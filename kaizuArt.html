@@ -15,6 +15,17 @@ Home page for Kaizu's Art. Under construction for new art from artist
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/styles3.css">
+    <script>
+
+window.onload = init;
+
+function init() {
+ document.forms[0].onsubmit = function() {
+    if (this.checkValidity()) alert("Thanks for signing up!");
+    return false;
+ }
+
+    </script>
   </head>
   <body>
     <header>
@@ -32,7 +43,7 @@ Home page for Kaizu's Art. Under construction for new art from artist
     <img src="images/construction.png" alt="UNDER CONSTRUCTION" style="100%" class="construct">
 
 <h1>Signup to be notified when construction is complete</h1>
-
+<form action="index.html" method="post">
 <fieldset id="uInfo">
 <legend>Information</legend>
 <div>
@@ -70,7 +81,6 @@ Home page for Kaizu's Art. Under construction for new art from artist
 <textarea name="experience" id="aYes" placeholder="Name and locations of convetions"></textarea>
 </div>
 </fieldset>
-<form action="index.html" method="post">
 <input type="submit" value="Signup"/>
 </form>
           <footer>Website created with permision from artists.</footer>
