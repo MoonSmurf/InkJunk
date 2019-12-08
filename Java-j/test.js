@@ -1,7 +1,7 @@
 
-window.onload = init;
+/*window.onload = checkit;
 
-function init() {
+function checkit() {
    document.forms[0].onsubmit = function() {
       if (this.checkValidity()) alert("Thanks for signing up!");
       return false;
@@ -21,4 +21,12 @@ function turnOnPickup() {
    document.getElementById("addressBox").disabled=true;
    document.getElementById("delBox").disabled=true;
    document.getElementById("pickupBox").disabled=false;
+}*/
+
+function  submitInfo() {
+	var userName = document.getElementById("nameB");
+	var email = document.getElementById("eMail");
+	(userName.value && email.value) ? alert("Thanks for signing up!") : alert("Please fill in missing info");
+
 }
+
