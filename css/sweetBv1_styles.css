@@ -132,20 +132,28 @@ body h1{
 
 }
 body h2{
-  padding: 10px;
-  margin: 5px;
+  color: black;
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
+  line-height: 25px;
   font-size: 15pt;
+  font-weight: normal;
 }
 body h3{
-  padding: 10px;
-  margin: 5px;
+  padding-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  line-height: 25px;
   font-size: 13pt;
-  color: darkblue;
+
 }
 section h2{
     font-size: 25pt;
     color: navy;
+  
 }
 .deer{
   display: block;
@@ -154,13 +162,18 @@ section h2{
   margin-left: auto;
   margin-right: auto;
 }
+
 .sweetcontainer img{
   width: 200px;
   padding: 5px;
+  margin-left: 7px;
+  
+  
 }
 .sweetcontainer img:hover{
   transform: scale(1.1);
   transition: 1s;
+    margin: 7px;
 }
 /*
 ===========
@@ -170,6 +183,8 @@ Video Setup
 video{
 	display: block;
 	width: 75%;
+    margin-left: auto;
+  margin-right: auto;
 }
 .sbVideo{
 	 display: block;
@@ -198,17 +213,20 @@ Cellphones
 
 @media all and (max-width: 480px){
 
-  body h1, h2 {
-    padding: 5px;
-    margin: 10px;
+    body h1, h2 {
+      padding: 5px;
+      margin: 10px;
+      font-size: 1.75em;
+    }
+  body h2{
+         padding: 5px;
+      margin: 10px;
+  font-size: 1.2em;  
+  } 
+  header img {
+    display: flex;
+    flex: 1 1 50%;
   }
-  body h1 {
-  font-size: 1.25em;
-  }  
-header img {
-  display: flex;
-  flex: 1 1 50%;
-}
 nav.topMenu{
   display: flex;
   -webkit-display: flex;
@@ -247,6 +265,8 @@ Video Setup
 video{
 	display: block;
 	width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .sbVideo{
 	 display: block;

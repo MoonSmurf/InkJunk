@@ -5,7 +5,46 @@ Mary Ashley Kovacevich
 schedule_styles.css
 Style step up for convention schedule
 */
+/*
+=========================
+CrimChains Navigation Setup
+=========================
+*/
+.cckaMenu {
+    position: relative;
+    display: inline-block;
+    background: lavender;
+    border-radius: 0px 0px 17px 17px;
+    text-align: center;
+    align-items: baseline;
+    width: 100%;
+    color: crimson;
+}
+.cckaMenu ul {
+  display: inline-flex;
+  list-style: none;
 
+}
+.cckaMenu ul li {
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  flex: auto;
+}
+.cckaMenu ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.cckaMenu ul li a:hover {
+color: hotpink;
+}
+
+
+/*
+================================
+CrimChains Navigation Setup End
+================================
+*/
 /*
 ===================
 Design Styles Setup
@@ -82,23 +121,22 @@ Devices
     body h1, h2 {
       padding: 5px;
       margin: 10px;
+      font-size: 1.75em;
     }
-  body h1 {
-  font-size: 1.25em;
-  }
+  body h2{
+         padding: 5px;
+      margin: 10px;
+  font-size: 1.2em;  
+  } 
   header img {
     display: flex;
     flex: 1 1 50%;
   }
-.construct{
-  width: 350px;
-}
 
 nav.topMenu{
   display: flex;
   -webkit-display: flex;
-  font-size: 1em;
-  background: lightgray;
+  font-size: 1.2em;
   border-bottom: 2px dotted gray;
   justify-content: space-around;
 }

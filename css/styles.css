@@ -12,23 +12,29 @@ Design Styles Setup
 ===================
 */
 body h1{
-  color: navy;
-  text-shadow: MediumTurquoise  3px 3px 2px;
+  color: black;
+  text-shadow: darkcyan  2px 2px 1px;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif ;
   font-size: 36pt;
   text-align: center;
   padding: 25px;
 }
 body h2{
-  padding: 10px;
-  margin: 5px;
+  color: black;
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
-  font-size: 15pt;
+  line-height: 25px;
+  font-size: 18pt;
+  font-weight: normal;
 }
 body h2 a{
   text-decoration: none;
 }
-
+.cckaMenu{
+  display: none;
+}
 /*
 ==================================
 Artist Icon Side by Side Nav Setup
@@ -112,12 +118,57 @@ Cellphones
 ============
 */
 @media all and (max-width: 480px) {
+/*
+=========================
+CrimChains Navigation Setup
+=========================
+*/
+.cckaMenu {
+    position: relative;
+    display: inline-block;
+    background: lavender;
+    border-radius: 0px 0px 17px 17px;
+    text-align: center;
+    align-items: baseline;
+    width: 100%;
+    color: crimson;
+}
+.cckaMenu ul {
+  display: inline-flex;
+  list-style: none;
 
+}
+.cckaMenu ul li {
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  flex: auto;
+}
+.cckaMenu ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.cckaMenu ul li a:hover {
+color: hotpink;
+}
+
+
+/*
+================================
+CrimChains Navigation Setup End
+================================
+*/
 
     body h1, h2 {
       padding: 5px;
       margin: 10px;
+      font-size: 1.75em;
     }
+  body h2{
+  padding: 5px;
+  margin: 10px;
+  font-size: 1.2em;  
+  } 
   header img {
     display: flex;
     flex: 1 1 50%;
@@ -140,8 +191,7 @@ height: auto;
 nav.topMenu{
   display: flex;
   -webkit-display: flex;
-  font-size: 1em;
-
+  font-size: 1.2em;
   border-bottom: 2px dotted gray;
   justify-content: space-around;
 }
@@ -170,7 +220,7 @@ nav.topMenu ul li a {
       margin: 10px;
     }
   body h1 {
-  font-size: 1.25em;
+  font-size: 1.2em;
   }
   header img {
     display: flex;

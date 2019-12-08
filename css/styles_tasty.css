@@ -149,7 +149,7 @@ body h2{
 Character Layout Setup
 ======================
 */
-#tastyBoisConatainContain {
+#tastyBoisConatain {
 	text-align: center;
 	width: 100%;
 	padding: 50px;
@@ -224,17 +224,19 @@ Cellphones
 */
 @media all and (max-width: 480px) {
 
-
     body h1, h2 {
       padding: 5px;
       margin: 10px;
+      font-size: 1.75em;
     }
+  body h2{
+         padding: 5px;
+      margin: 10px;
+  font-size: 1.2em;  
+  } 
   header img {
     display: flex;
     flex: 1 1 50%;
-  }
-    body h1 {
-  font-size: 1.25em;
   }
 
   #tastyBoisConatainContain {
@@ -250,7 +252,7 @@ Cellphones
 nav.topMenu{
   display: flex;
   -webkit-display: flex;
-  font-size: 1em;
+  font-size: 1.2em;
   background: lightgray;
   border-bottom: 2px dotted gray;
   justify-content: space-around;

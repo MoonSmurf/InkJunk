@@ -11,7 +11,9 @@ layout setup for all webpages
 }
 
 html{
-  background-image: url(texture.jpg);
+  background-image: url(seamless.jpg);
+
+ 
 
 }
 header{
