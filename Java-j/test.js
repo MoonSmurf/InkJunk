@@ -1,7 +1,7 @@
 
-window.onload = checkit;
+window.onload = init;
 
-function checkit() {
+function init() {
    document.forms[0].onsubmit = function() {
       if (this.checkValidity()) alert("Thanks for signing up!");
       return false;
