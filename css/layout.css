@@ -11,19 +11,12 @@ layout setup for all webpages
 }
 
 html{
-  background-image: url(glow.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  box-sizing: border-box;
-  border: 0px;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+  background-image: url(texture.jpg);
+
 }
 header{
   display: block;
-  background: lightyellow;
+  background-image: url(stars.jpg) ;
 }
 header h1{
   text-shadow: silver 3px 3px 2px;
@@ -34,6 +27,52 @@ header h1{
 	padding:25px;
 	margin: 30px;
 }
+.ink{
+  display: block;
+  width:50%;
+  border-radius: 0px 0px 3px 3px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*
+=====================
+Main Navigation Setup
+=====================
+*/
+nav.topMenu{
+  display: flex;
+  -webkit-display: flex;
+  justify-content:center;
+  font-size: 1.35em;
+  border-bottom: 2px dotted gray;
+
+
+}
+nav.topMenu ul{
+  list-style: none;
+  display: flex;
+  -webkit-display: flex;
+}
+nav.topMenu ul li {
+padding: 1.25em;
+flex: auto;
+}
+nav.topMenu ul li:hover{
+background: grey;
+}
+nav.topMenu ul li a {
+text-decoration: none;
+color: gainsboro;
+  font-weight: bold;
+}
+nav.topMenu ul li a:hover{
+color: hotpink;
+}
+/*
+=========================
+Main Navigation Setup End
+=========================
+*/
 nav {
   display: block;
   width: auto;
@@ -42,7 +81,55 @@ nav {
 
 footer{
   display: block;
-  background: lightyellow;
   font-size: 1em;
   text-align: center;
 }
+/*
+============
+Cellphones
+============
+*/
+
+@media all and (max-width: 480px){
+
+  body h1, h2 {
+    padding: 5px;
+    margin: 10px;
+  }
+  body h1 {
+  font-size: 1.25em;
+  }  
+header img {
+  display: flex;
+  flex: 1 1 50%;
+}
+nav.topMenu{
+  display: flex;
+  -webkit-display: flex;
+  font-size: 1em;
+  background: lightgray;
+  border-bottom: 2px dotted gray;
+  justify-content: space-around;
+}
+nav.topMenu ul {
+
+  list-style: none;
+  display: flex;
+  -webkit-display: flex;
+}
+nav.topMenu ul li {
+  padding: 0.5em;
+  flex: auto;
+  text-align: center;
+  vertical-align: baseline;
+}
+nav.topMenu ul li a {
+  text-decoration: none;
+  color: slateblue;
+}
+}
+/*
+================
+Cellphones  End
+================
+*/

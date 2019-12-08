@@ -5,54 +5,13 @@ Mary Ashley Kovacevich
 schedule_styles.css
 Style step up for convention schedule
 */
-/*
-=====================
-Main Navigation Setup
-=====================
-*/
-nav.topMenu{
-  display: flex;
-  -webkit-display: flex;
-  justify-content: center;
-  font-size: 1.5em;
-  background: lightyellow;
-  border-bottom: 2px dotted gray;
-  padding-left: 5px;
-  margin-bottom:  10px;
-}
-nav.topMenu ul{
-  list-style: none;
-  display: flex;
-  -webkit-display: flex;
-}
-nav.topMenu ul li {
-padding: 1.5em;
-flex: auto;
-text-align: center;
-vertical-align: baseline;
-}
-nav.topMenu ul li:hover{
-background: lavender;
-}
-nav.topMenu ul li a {
-text-decoration: none;
-color: slateblue;
-}
-nav.topMenu ul li a:hover{
-color: hotpink;
-}
-/*
-=========================
-Main Navigation Setup End
-=========================
-*/
+
 /*
 ===================
 Design Styles Setup
 ===================
 */
 body h1{
-  color: beige;
   font-size: 24pt;
   text-align: center;
   padding: 5px;
@@ -68,10 +27,12 @@ Schedule style Setup
 =========================
 */
 table.calender{
-  width: 100%;
+  width: 75%; 
   border: 3px dotted black;
   border-collapse: collapse;
   font-family: Arial, Verdana, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
 }
 table.calender tr{
   height: 25px;
@@ -88,19 +49,19 @@ table.calender caption{
   text-align: center;
 }
 col.sHours{
-  background: mediumaquamarine;
+  background: cornsilk;
   width: 10%;
 }
 col.wDayColumns{
-  background: lavenderblush;
+  background: floralwhite;
   width: 11%;
 }
 table.calender thead{ /*17 make header names green */
   color: white;
-  background: black;
+  background: burlywood;
   }
   table.calender thead th:first-of-type{ /*18 change "Time" header to dark brown*/
-    background:lightseagreen;
+    background:darkslategrey;
   }
 
 /* Table Footer Styles */
@@ -111,9 +72,9 @@ table.calender tfoot{
 }
 /*Table Setup end*/
 /*
-============
-Cellphones
-============
+=======
+Devices
+=======
 */
 @media all and (max-width: 480px) {
 
@@ -122,16 +83,22 @@ Cellphones
       padding: 5px;
       margin: 10px;
     }
+  body h1 {
+  font-size: 1.25em;
+  }
   header img {
     display: flex;
     flex: 1 1 50%;
   }
+.construct{
+  width: 350px;
+}
 
 nav.topMenu{
   display: flex;
   -webkit-display: flex;
   font-size: 1em;
-  background: lightyellow;
+  background: lightgray;
   border-bottom: 2px dotted gray;
   justify-content: space-around;
 }
@@ -151,14 +118,40 @@ nav.topMenu ul li a {
   text-decoration: none;
   color: slateblue;
 }
-table.calender{
-width: auto;
-
 }
 
+@media all and (min-width: 481px) {
+
+
+    body h1, h2 {
+      padding: 5px;
+      margin: 10px;
+    }
+  body h1 {
+  font-size: 1.25em;
+  }
+  header img {
+    display: flex;
+    flex: 1 1 50%;
+  }
+}
+  @media all and (min-width: 750px) {
+
+
+      body h1, h2 {
+        padding: 5px;
+        margin: 10px;
+      }
+    body h1 {
+    font-size: 2em;
+    }
+    header img {
+      display: flex;
+      flex: 1 1 50%;
+    }
 }
 /*
-=================
-Cellphones  End
-=================
+===========
+Device End
+===========
 */

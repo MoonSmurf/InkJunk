@@ -7,46 +7,7 @@ styles_tasty.css
 Style set up for the Tasty Bois Information Page
 */
 
-/*
-=====================
-Main Navigation Setup
-=====================
-*/
-nav.topMenu{
-  display: flex;
-  -webkit-display: flex;
-  justify-content: center;
-  font-size: 1.5em;
-  background: lightyellow;
-  border-bottom: 2px dotted gray;
-  padding-left: 5px;
-}
-nav.topMenu ul{
-  list-style: none;
-  display: flex;
-  -webkit-display: flex;
-}
-nav.topMenu ul li {
-padding: 1.5em;
-flex: auto;
-text-align: center;
-vertical-align: baseline;
-}
-nav.topMenu ul li:hover{
-background: lavender;
-}
-nav.topMenu ul li a {
-text-decoration: none;
-color: slateblue;
-}
-nav.topMenu ul li a:hover{
-color: hotpink;
-}
-/*
-=========================
-Main Navigation Setup End
-=========================
-*/
+
 /*
 =========================
 CrimChains Navigation Setup
@@ -272,6 +233,10 @@ Cellphones
     display: flex;
     flex: 1 1 50%;
   }
+    body h1 {
+  font-size: 1.25em;
+  }
+
   #tastyBoisConatainContain {
   	text-align: center;
   	width: 100%;
@@ -286,7 +251,7 @@ nav.topMenu{
   display: flex;
   -webkit-display: flex;
   font-size: 1em;
-  background: lightyellow;
+  background: lightgray;
   border-bottom: 2px dotted gray;
   justify-content: space-around;
 }
@@ -307,6 +272,7 @@ nav.topMenu ul li a {
   color: slateblue;
 }
 }
+
 /*
 =================
 Cellphones  End

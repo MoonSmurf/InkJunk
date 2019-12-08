@@ -5,21 +5,18 @@ Mary Ashley Kovacevich
 layout.css
 layout setup for all webpages
 */
-/**{
+*{
   margin: 0;
   padding: 0;
-}*/
+}
 
 html{
   background-image: url(seamless.jpg);
-/*
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;*/
+
 }
 header{
   display: block;
-  background: lightyellow;
+  background-image: url(stars.jpg) ;
 }
 header h1{
   text-shadow: silver 3px 3px 2px;
@@ -30,6 +27,14 @@ header h1{
 	padding:25px;
 	margin: 30px;
 }
+.ink{
+  display: block;
+  width:50%;
+  border-radius: 0px 0px 3px 3px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 nav {
   display: block;
   width: auto;
@@ -38,7 +43,6 @@ nav {
 
 footer{
   display: block;
-  background: lightyellow;
   font-size: 1em;
   text-align: center;
 }

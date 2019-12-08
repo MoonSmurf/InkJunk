@@ -6,7 +6,7 @@ if (document.readyState == "loading") {
 
 function ready() {
 
-    var addItemBtn = document.getElementsByClassName("shop-item-button")
+    var addItemBtn = document.getElementsByClassName("add-to-cart")
     for (var i = 0; i < addItemBtn.length; i++) {
         var button = addItemBtn[i]
         button.addEventListener("click", addToCartClicked)
@@ -29,7 +29,7 @@ function ready() {
 }
 
 function purchaseClicked() {
-    alert("Thank you for your purchase")
+    alert("Thank you for buying our stuff")
     var cartItems = document.getElementsByClassName("cart-items")[0]
     while (cartItems.hasChildNodes()) {
         cartItems.removeChild(cartItems.firstChild)
@@ -54,9 +54,9 @@ function quantityChanged(event) {
 function addToCartClicked(event) {
     var button = event.target
     var shopItem = button.parentElement.parentElement
-    var title = shopItem.getElementsByClassName("whatchamacallit")[0].innerText
-    var price = shopItem.getElementsByClassName("itllCostYa")[0].innerText
-    var imageSrc = shopItem.getElementsByClassName("imagePreview")[0].src
+    var title = shopItem.getElementsByClassName("shop-item-title")[0].innerText
+    var price = shopItem.getElementsByClassName("shop-item-price")[0].innerText
+    var imageSrc = shopItem.getElementsByClassName("shop-item-portrait")[0].src
     addToCart(title, price, imageSrc)
     updateCartTotal()
 }
@@ -74,7 +74,7 @@ function addToCart(title, price, imageSrc) {
     }
     var cartRowContents = `
         <div class="cart-item cart-column">
-            <img class="cart-item-image" src="${imageSrc}" width="25%" height="50%">
+            <img class="cart-item-portrait" src="${imageSrc}" width="65%" height="85%">
             <span class="cart-item-title">${title}</span>
         </div>
         <span class="cart-price cart-column">${price}</span>
