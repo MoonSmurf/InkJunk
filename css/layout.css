@@ -3,7 +3,7 @@
 Mary Ashley Kovacevich
 11-1-2019
 layout.css
-layout setup for all webpages
+layout setup for all pages except for
 */
 *{
   margin: 0;
@@ -13,7 +13,7 @@ layout setup for all webpages
 html{
   background-image: url(seamless.jpg);
 
- 
+
 
 }
 header{
@@ -100,7 +100,7 @@ Cellphones
   }
   body h1 {
   font-size: 1.25em;
-  }  
+  }
 header img {
   display: flex;
   flex: 1 1 50%;

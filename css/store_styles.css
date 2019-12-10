@@ -3,8 +3,48 @@
 Mary Ashley Kovacevich
 11-1-2019
 styles.css
-Style step up for InkJunk Home  pages
+Style step up for InkJunk store front
 */
+
+/*
+=========================
+CrimChains Navigation Setup
+=========================
+*/
+.cckaMenu {
+    position: relative;
+    display: inline-block;
+    background: lavender;
+    border-radius: 0px 0px 17px 17px;
+    text-align: center;
+    align-items: baseline;
+    width: 100%;
+    color: crimson;
+}
+.cckaMenu ul {
+  display: inline-flex;
+  list-style: none;
+
+}
+.cckaMenu ul li {
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  flex: auto;
+}
+.cckaMenu ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.cckaMenu ul li a:hover {
+color: hotpink;
+}
+/*
+================================
+CrimChains Navigation Setup End
+================================
+*/
+
 /*
 =====================
 Main Navigation Setup
@@ -13,12 +53,11 @@ Main Navigation Setup
 nav.topMenu{
   display: flex;
   -webkit-display: flex;
-  justify-content: center;
-  font-size: 1.5em;
-  background: lightyellow;
+  justify-content:center;
+  font-size: 1.35em;
   border-bottom: 2px dotted gray;
   padding-left: 5px;
-  margin-bottom:  10px;
+
 }
 nav.topMenu ul{
   list-style: none;
@@ -26,17 +65,16 @@ nav.topMenu ul{
   -webkit-display: flex;
 }
 nav.topMenu ul li {
-padding: 1.5em;
+padding: 1.25em;
 flex: auto;
-text-align: center;
-vertical-align: baseline;
 }
 nav.topMenu ul li:hover{
-background: lavender;
+background: grey;
 }
 nav.topMenu ul li a {
 text-decoration: none;
-color: slateblue;
+color: gainsboro;
+  font-weight: bold;
 }
 nav.topMenu ul li a:hover{
 color: hotpink;
@@ -47,94 +85,129 @@ Main Navigation Setup End
 =========================
 */
 
-.containItems { //section class
-
+/*
+===================
+Design Styles Setup
+===================
+*/
+body h1{
+  color: navy;
+  text-shadow: MediumTurquoise  3px 3px 2px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif ;
+  font-size: 36pt;
+  text-align: center;
+  padding: 25px;
 }
-.itemType {
+body h2{
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
+  font-size: 15pt;
+}
+body h2 a{
+  text-decoration: none;
+}
 
+#scrollUpBtn { /*Scroll to top of page */
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: darkslateblue;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 15px;
+}
+#scrollUpBtn:hover{
+  background-color: magenta;
+}
+
+
+
+#containSmallItems .itemType {
+    background-color: gainsboro;
     font-weight: normal;
     color: black;
     text-align: center;
     font-size: 2.5em;
+    padding: 15px;
+   margin-bottom: 75px;
+
+
 }
+#containLargeItems .itemType {
+background-color: gainsboro;
+    font-weight: normal;
+    color: black;
+    text-align: center;
+    font-size: 2.5em;
+    padding: 15px;
+   margin-bottom: 75px;
+
+
+}
+#containCharmItems .itemType {
+background-color: gainsboro;
+    font-weight: normal;
+    color: black;
+    text-align: center;
+    font-size: 2.5em;
+    padding: 15px;
+   margin-bottom: 75px;
+
+
+}
+#containBookItems .itemType {
+background-color: gainsboro;
+    font-weight: normal;
+    color: black;
+    text-align: center;
+    font-size: 2.5em;
+    padding: 15px;
+   margin-bottom: 75px;
+
+
+}
+
+#containCart .itemType2{
+  margin-top: 50px;
+
+}
+
+.itemType2 {
+background-color: darkorchid;
+
+    font-weight: normal;
+    color: gainsboro;
+    text-align: center;
+    font-size: 2.5em;
+    padding: 15px;
+}
+
 .btn {
+
     text-align: center;
     vertical-align: baseline;
-    padding: .67em .67em;
+    padding: 10px 7px;
     cursor: pointer;
 }
 
-.btn-header {
-    margin: .5em 15% 2em 15%;
-    color: white;
-    border: 2px solid #2D9CDB;
-    background-color: rgba(255, 255, 255, .1);
-    border-radius: 0;
-    font-size: 1.5em;
-    font-weight: lighter;
-    padding-left: 2em;
-    padding-right: 2em;
-}
-
-.btn-header:hover {
-    background-color: rgba(255, 255, 255, .3);
-}
-
-.btn-play {
-    display: block;
-    margin: 0 auto;
-    color: #2D9CDB;
-    font-size: 4em;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    padding: 0;
-    text-align: center;
-}
 
 .btn-primary {
     color: white;
-    background-color: #56CCF2;
+    background-color: indigo;
     border: none;
-    border-radius: .3em;
+    border-radius: 5px;
     font-weight: bold;
 }
 
 .btn-primary:hover {
-    background-color: #2D9CDB;
-}
-
-.tour-row {
-    border-bottom: 1px solid black;
-    padding-bottom: 1em;
-    margin-bottom: 1em;
-}
-
-.tour-row:last-child {
-    border: none;
-}
-
-.tour-item {
-    display: inline-block;
-    padding-right: .5em;
-}
-
-.tour-date {
-    color: #555;
-    width: 11%;
-    font-weight: bold;
-}
-
-.tour-city {
-    width: 24%;
-}
-
-.tour-arena {
-    width: 42%;
-}
-
-.tour-btn {
-    max-width: 19%;
+    background-color: green;
 }
 
 .shop-item {
@@ -147,39 +220,51 @@ Main Navigation Setup End
     text-align: center;
     font-weight: bold;
     font-size: 1.5em;
-    color: goldenrod; // CHANGE COLOR
+    color: goldenrod;
     margin-bottom: 15px;
 }
-
-.shop-item-image {
-
-    height: 250px;
-    padding: 10px;
-    margin: 25px;
-
+.shop-item-portrait{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 250px;
+}
+.shop-item-landscape{
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 375px;
 }
 
 .shop-item-details {
     display: flex;
+    text-align: center;
     align-items: center;
 
 }
-
 .shop-item-price {
-    flex-grow: 1;
-    color: darkslategray; //COLOR
+    margin-right: auto;
+    color: black;
 }
-
-.shop-items {
+#shop-items-Smallprints {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-
-.cart-header {
-    font-weight: bold;
-    font-size: 1.25em;
-    color: #333;
+#shop-items-Largeprints {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#shop-items-Charms {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#shop-items-Books {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .cart-column {
@@ -196,28 +281,27 @@ Main Navigation Setup End
 }
 
 .cart-item {
-    width: 45%;
+    width: 35%;
 }
 
 .cart-price {
     width: 20%;
     font-size: 1.2em;
-    color: #333;
+    color: black;
 }
 
 .cart-quantity {
-    width: 35%;
+    width: 25%;
 }
 
 .cart-item-title {
-    color: #333;
-    margin-left: .5em;
+    color: black;
+    margin-left: 15px;
     font-size: 1.2em;
 }
 
-.cart-item-image {
-    width: 75px;
-    height: auto;
+.cart-item-portrait {
+    width: 150px;
     border-radius: 10px;
 }
 
@@ -254,42 +338,54 @@ Main Navigation Setup End
 }
 
 .cart-total {
-    text-align: end;
+    text-align: center;
     margin-top: 10px;
     margin-right: 10px;
 }
 
-.cart-total-header {
+.cart-total-header { /*the word total*/
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 1.75em;
     color: black;
     text-align: center;
 
 }
 
-.cart-total-price {
+.cart-total-price { /* display of total cost*/
     color: black;
-    font-size: 1.2em;
-    padding-left: 5px;
+    font-size: 1.5em;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-.buy-btn {
-    display: block;
+.buy-btn { /*proceed to checkout*/
+    display: flex;
     margin: 40px auto 80px auto;
-    font-size: 1.25em;
+    font-size: 1.05em;
 }
 /*
-============
-Cellphones
-============
+===================
+Design Styles Setup
+===================
+*/
+
+/*
+=======
+Devices
+=======
 */
 @media all and (max-width: 480px) {
-
 
     body h1, h2 {
       padding: 5px;
       margin: 10px;
+      font-size: 1.75em;
     }
+  body h2{
+         padding: 5px;
+      margin: 10px;
+  font-size: 1.2em;
+  }
   header img {
     display: flex;
     flex: 1 1 50%;
@@ -298,10 +394,11 @@ Cellphones
 nav.topMenu{
   display: flex;
   -webkit-display: flex;
-  font-size: 1em;
-  background: lightyellow;
+  font-size: 1.2em;
+  background: lightgray;
   border-bottom: 2px dotted gray;
   justify-content: space-around;
+
 }
 nav.topMenu ul {
 
@@ -320,8 +417,39 @@ nav.topMenu ul li a {
   color: slateblue;
 }
 }
+
+@media all and (min-width: 481px) {
+
+
+    body h1, h2 {
+      padding: 5px;
+      margin: 10px;
+    }
+  body h1 {
+  font-size: 1.25em;
+  }
+  header img {
+    display: flex;
+    flex: 1 1 50%;
+  }
+}
+  @media all and (min-width: 750px) {
+
+
+      body h1, h2 {
+        padding: 5px;
+        margin: 10px;
+      }
+    body h1 {
+    font-size: 2em;
+    }
+    header img {
+      display: flex;
+      flex: 1 1 50%;
+    }
+}
 /*
-=================
-Cellphones  End
-=================
+===========
+Device End
+===========
 */

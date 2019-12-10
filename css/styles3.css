@@ -82,23 +82,28 @@ textarea {
    height: 100px;
 }
 
-input[type="submit"] {
-  background-color: mistyrose;
-  border-radius: 13px;
+#subscribe {
+   background-color: mistyrose;
+   border-radius: 13px;
    height: 50px;
-   width: 200px;
+   width: 175px;
+   margin-left: auto;
+   margin-right: auto;
 }
+
 /*form validate*/
 input:focus, select:focus, textarea:focus {
-  background-color: oldlace;
+background-color: oldlace;
 }
+
 input#nameB:focus:valid,
 input#pNum:focus:valid{
-  background: rgb(220,255,220);
+background: rgb(220,255,220);
 }
+
 input#nameB:focus:invalid,
 input#pNum:focus:invalid{
-  background: rgb(255,230,230);
+background: rgb(255,230,230);
 }
 /*
 =======================
