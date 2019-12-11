@@ -206,6 +206,22 @@ Character Layout Setup
   height: auto;
 
 }
+#darkProfile{
+  display: none;
+  font-size: 1.1em;
+  text-align: center;
+  vertical-align: baseline;
+  padding-bottom: 25px;
+}
+.darkChocolate {
+  font-size: 25px;
+  border: none;
+  border-radius: 5px;
+  background-color: teal;
+  color: white;
+  font-weight: bold;
+
+}
 .vanilla{
   position: relative;
   width: 100%;
@@ -223,6 +239,27 @@ Character Layout Setup
 	padding-right: 15px;
 	display: inline-block;
 }
+
+
+/*Info Buttons*/
+.btn {
+  text-align: center;
+  vertical-align: baseline;
+  padding: 7px;
+  margin-top: 5px;
+  margin-left:12em;
+  cursor: pointer;
+}
+.btn-info {
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+
+}
+
+
+
 /*
 ==========================
 Character Layout Setup End

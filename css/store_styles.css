@@ -1,44 +1,39 @@
 @charset "UTF-8";
-/*
-Mary Ashley Kovacevich
-11-1-2019
-styles.css
-Style step up for InkJunk store front
-*/
+/* Mary Ashley Kovacevich 11-1-2019 styles.css Style step up for InkJunk store front */
 
 /*
 =========================
 CrimChains Navigation Setup
 =========================
 */
-.cckaMenu {
-    position: relative;
-    display: inline-block;
-    background: lavender;
-    border-radius: 0px 0px 17px 17px;
-    text-align: center;
-    align-items: baseline;
-    width: 100%;
-    color: crimson;
+ .cckaMenu {
+     position: relative;
+     display: inline-block;
+     background: lavender;
+     border-radius: 0px 0px 17px 17px;
+     text-align: center;
+     align-items: baseline;
+     width: 100%;
+     color: crimson;
 }
-.cckaMenu ul {
-  display: inline-flex;
-  list-style: none;
+ .cckaMenu ul {
+     display: inline-flex;
+     list-style: none;
+}
+ .cckaMenu ul li {
+     padding-right: 1.5em;
+     padding-left: 1.5em;
+     flex: auto;
+}
+ .cckaMenu ul li a {
+     text-decoration: none;
+     color: black;
+     font-weight: bold;
+}
+ .cckaMenu ul li a:hover {
+     color: hotpink;
+}
 
-}
-.cckaMenu ul li {
-  padding-right: 1.5em;
-  padding-left: 1.5em;
-  flex: auto;
-}
-.cckaMenu ul li a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
-}
-.cckaMenu ul li a:hover {
-color: hotpink;
-}
 /*
 ================================
 CrimChains Navigation Setup End
@@ -50,35 +45,35 @@ CrimChains Navigation Setup End
 Main Navigation Setup
 =====================
 */
-nav.topMenu{
-  display: flex;
-  -webkit-display: flex;
-  justify-content:center;
-  font-size: 1.35em;
-  border-bottom: 2px dotted gray;
-  padding-left: 5px;
+ nav.topMenu{
+     display: flex;
+     -webkit-display: flex;
+     justify-content:center;
+     font-size: 1.35em;
+     border-bottom: 2px dotted gray;
+     padding-left: 5px;
+}
+ nav.topMenu ul{
+     list-style: none;
+     display: flex;
+     -webkit-display: flex;
+}
+ nav.topMenu ul li {
+     padding: 1.25em;
+     flex: auto;
+}
+ nav.topMenu ul li:hover{
+     background: grey;
+}
+ nav.topMenu ul li a {
+     text-decoration: none;
+     color: gainsboro;
+     font-weight: bold;
+}
+ nav.topMenu ul li a:hover{
+     color: hotpink;
+}
 
-}
-nav.topMenu ul{
-  list-style: none;
-  display: flex;
-  -webkit-display: flex;
-}
-nav.topMenu ul li {
-padding: 1.25em;
-flex: auto;
-}
-nav.topMenu ul li:hover{
-background: grey;
-}
-nav.topMenu ul li a {
-text-decoration: none;
-color: gainsboro;
-  font-weight: bold;
-}
-nav.topMenu ul li a:hover{
-color: hotpink;
-}
 /*
 =========================
 Main Navigation Setup End
@@ -90,366 +85,368 @@ Main Navigation Setup End
 Design Styles Setup
 ===================
 */
-body h1{
-  color: navy;
-  text-shadow: MediumTurquoise  3px 3px 2px;
-	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif ;
-  font-size: 36pt;
-  text-align: center;
-  padding: 25px;
+html{
+  scroll-behavior: smooth;
 }
-body h2{
-  padding: 10px;
-  margin: 5px;
-  text-align: center;
-  font-size: 15pt;
+ body h1{
+     color: navy;
+     text-shadow: MediumTurquoise 3px 3px 2px;
+     font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif ;
+     font-size: 36pt;
+     text-align: center;
+     padding: 25px;
 }
-body h2 a{
-  text-decoration: none;
+ body h2{
+     padding: 10px;
+     margin: 5px;
+     text-align: center;
+     font-size: 15pt;
 }
-
-#scrollUpBtn { /*Scroll to top of page */
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 30px;
-  z-index: 99;
-  border: none;
-  outline: none;
-  background-color: darkslateblue;
-  color: white;
-  cursor: pointer;
-  padding: 15px;
-  border-radius: 5px;
-  font-size: 15px;
+ body h2 a{
+     text-decoration: none;
 }
-#scrollUpBtn:hover{
-  background-color: magenta;
+ #scrollUpBtn {
+    /*Scroll to top of page */
+     display: none;
+     position: fixed;
+     bottom: 10px;
+     right: 10px;
+     z-index: 99;
+     border: none;
+     outline: none;
+     background-color: darkslateblue;
+     color: white;
+     cursor: pointer;
+     padding: 10px;
+     border-radius: 5px;
+     font-size: 11px;
 }
-
-
-
-#containSmallItems .itemType {
-    background-color: gainsboro;
-    font-weight: normal;
-    color: black;
-    text-align: center;
-    font-size: 2.5em;
-    padding: 15px;
-   margin-bottom: 75px;
-
-
-}
-#containLargeItems .itemType {
-background-color: gainsboro;
-    font-weight: normal;
-    color: black;
-    text-align: center;
-    font-size: 2.5em;
-    padding: 15px;
-   margin-bottom: 75px;
-
-
-}
-#containCharmItems .itemType {
-background-color: gainsboro;
-    font-weight: normal;
-    color: black;
-    text-align: center;
-    font-size: 2.5em;
-    padding: 15px;
-   margin-bottom: 75px;
-
-
-}
-#containBookItems .itemType {
-background-color: gainsboro;
-    font-weight: normal;
-    color: black;
-    text-align: center;
-    font-size: 2.5em;
-    padding: 15px;
-   margin-bottom: 75px;
-
-
+ #scrollUpBtn:hover{
+     background-color: magenta;
 }
 
-#containCart .itemType2{
-  margin-top: 50px;
-
+.btnShow{
+     animation-duration: 0.75s;
+     animation-fill-mode: both;
+     animation-name: btnShow;
+}
+ @keyframes btnShow {
+     from{
+         opacity: 0;
+         transform: translate3d(0, 100%, 0);
+    } to {
+         opacity: 1;
+         transform: translate3d(0, 0, 0);
+    }
+}
+ .btnHide {
+     animation-duration: 0.5s;
+     animation-fill-mode: both;
+     animation-name: btnHide;
+}
+ @keyframes btnHide {
+     from {
+         opacity: 1;
+    } to {
+         opacity: 0;
+         transform: translate3d(0, 100%, 0);
+    }
 }
 
-.itemType2 {
-background-color: darkorchid;
-
-    font-weight: normal;
-    color: gainsboro;
-    text-align: center;
-    font-size: 2.5em;
-    padding: 15px;
+ #GoToCart {
+    /*Scroll to Cart*/
+     position: fixed;
+     top: 10px;
+     right: 10px;
+     z-index: 99;
+     border: none;
+     outline: none;
+     background-color: midnightblue;
+     color: white;
+     cursor: pointer;
+     padding: 7px;
+     border-radius: 5px;
+     font-size: 13px;
+}
+ #GoToCart:hover{
+     background-color: magenta;
+}
+ #containSmallItems .itemType {
+     background-color: gainsboro;
+     font-weight: normal;
+     color: black;
+     text-align: center;
+     font-size: 2.5em;
+     padding: 15px;
+     margin-bottom: 75px;
+}
+ #containLargeItems .itemType {
+     background-color: gainsboro;
+     font-weight: normal;
+     color: black;
+     text-align: center;
+     font-size: 2.5em;
+     padding: 15px;
+     margin-bottom: 75px;
+}
+ #containCharmItems .itemType {
+     background-color: gainsboro;
+     font-weight: normal;
+     color: black;
+     text-align: center;
+     font-size: 2.5em;
+     padding: 15px;
+     margin-bottom: 75px;
+}
+ #containBookItems .itemType {
+     background-color: gainsboro;
+     font-weight: normal;
+     color: black;
+     text-align: center;
+     font-size: 2.5em;
+     padding: 15px;
+     margin-bottom: 75px;
+}
+ #containCart .itemType2{
+     margin-top: 50px;
+}
+ .itemType2 {
+     background-color: darkorchid;
+     font-weight: normal;
+     color: gainsboro;
+     text-align: center;
+     font-size: 2.5em;
+     padding: 15px;
+}
+ .btn {
+     text-align: center;
+     vertical-align: baseline;
+     padding: 10px 7px;
+     cursor: pointer;
+}
+ .btn-primary {
+     color: white;
+     background-color: indigo;
+     border: none;
+     border-radius: 5px;
+     font-weight: bold;
+}
+ .btn-primary:hover {
+     background-color: green;
+}
+ .shop-item {
+     margin: 30px;
+}
+ .shop-item-title {
+     display: block;
+     width: 100%;
+     text-align: center;
+     font-weight: bold;
+     font-size: 1.5em;
+     color: goldenrod;
+     margin-bottom: 15px;
+}
+ .shop-item-portrait{
+     display: flex;
+     margin-left: auto;
+     margin-right: auto;
+     width: 250px;
+}
+ .shop-item-landscape{
+     display: flex;
+     margin-left: auto;
+     margin-right: auto;
+     width: 375px;
+}
+ .shop-item-details {
+     display: flex;
+     text-align: center;
+     align-items: center;
+}
+ .shop-item-price {
+     margin-right: auto;
+     color: black;
+}
+ #shop-items-Smallprints {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+}
+ #shop-items-Largeprints {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+}
+ #shop-items-Charms {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+}
+ #shop-items-Books {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+}
+ .cart-column {
+     display: flex;
+     align-items: center;
+     border-bottom: 1px solid black;
+     margin-right: 1.5em;
+     padding-bottom: 10px;
+     margin-top: 10px;
+}
+ .cart-row {
+     display: flex;
+}
+ .cart-item {
+     width: 35%;
+}
+ .cart-price {
+     width: 20%;
+     font-size: 1.2em;
+     color: black;
+}
+ .cart-quantity {
+     width: 25%;
+}
+ .cart-item-title {
+     color: black;
+     margin-left: 15px;
+     font-size: 1.2em;
+}
+ .cart-item-portrait {
+     width: 150px;
+     border-radius: 10px;
+}
+ .remove-btn {
+     color: white;
+     background-color: crimson;
+     border: none;
+     border-radius: 5px;
+     font-weight: bold;
+}
+ .remove-btn:hover {
+     background-color: red;
+}
+ .cart-quantity-input {
+     height: 34px;
+     width: 50px;
+     border-radius: 5px;
+     border: 1px solid gray;
+     color: indigo;
+     padding: 0;
+     text-align: center;
+     font-size: 1.2em;
+     margin-right: 25px;
+}
+ .cart-row:last-child {
+     border-bottom: 1px solid black;
+}
+ .cart-row:last-child .cart-column {
+     border: none;
+}
+ .cart-total {
+     text-align: center;
+     margin-top: 10px;
+     margin-right: 10px;
+}
+ .cart-total-header {
+    /*the word total*/
+     font-weight: bold;
+     font-size: 1.75em;
+     color: black;
+     text-align: center;
+}
+ .cart-total-price {
+    /* display of total cost*/
+     color: black;
+     font-size: 1.5em;
+     padding-left: 15px;
+     padding-right: 15px;
+}
+ .buy-btn {
+    /*proceed to checkout*/
+     display: flex;
+     margin: 40px auto 80px auto;
+     font-size: 1.05em;
 }
 
-.btn {
-
-    text-align: center;
-    vertical-align: baseline;
-    padding: 10px 7px;
-    cursor: pointer;
-}
-
-
-.btn-primary {
-    color: white;
-    background-color: indigo;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.btn-primary:hover {
-    background-color: green;
-}
-
-.shop-item {
-    margin: 30px;
-}
-
-.shop-item-title {
-    display: block;
-    width: 100%;
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.5em;
-    color: goldenrod;
-    margin-bottom: 15px;
-}
-.shop-item-portrait{
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  width: 250px;
-}
-.shop-item-landscape{
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  width: 375px;
-}
-
-.shop-item-details {
-    display: flex;
-    text-align: center;
-    align-items: center;
-
-}
-.shop-item-price {
-    margin-right: auto;
-    color: black;
-}
-#shop-items-Smallprints {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-#shop-items-Largeprints {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-#shop-items-Charms {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-#shop-items-Books {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.cart-column {
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid black;
-    margin-right: 1.5em;
-    padding-bottom: 10px;
-    margin-top: 10px;
-}
-
-.cart-row {
-    display: flex;
-}
-
-.cart-item {
-    width: 35%;
-}
-
-.cart-price {
-    width: 20%;
-    font-size: 1.2em;
-    color: black;
-}
-
-.cart-quantity {
-    width: 25%;
-}
-
-.cart-item-title {
-    color: black;
-    margin-left: 15px;
-    font-size: 1.2em;
-}
-
-.cart-item-portrait {
-    width: 150px;
-    border-radius: 10px;
-}
-
-.remove-btn {
-    color: white;
-    background-color: crimson;
-    border: none;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.remove-btn:hover {
-    background-color: red;
-}
-
-.cart-quantity-input {
-    height: 34px;
-    width: 50px;
-    border-radius: 5px;
-    border: 1px solid gray;
-    color: indigo;
-    padding: 0;
-    text-align: center;
-    font-size: 1.2em;
-    margin-right: 25px;
-}
-
-.cart-row:last-child {
-    border-bottom: 1px solid black;
-}
-
-.cart-row:last-child .cart-column {
-    border: none;
-}
-
-.cart-total {
-    text-align: center;
-    margin-top: 10px;
-    margin-right: 10px;
-}
-
-.cart-total-header { /*the word total*/
-    font-weight: bold;
-    font-size: 1.75em;
-    color: black;
-    text-align: center;
-
-}
-
-.cart-total-price { /* display of total cost*/
-    color: black;
-    font-size: 1.5em;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.buy-btn { /*proceed to checkout*/
-    display: flex;
-    margin: 40px auto 80px auto;
-    font-size: 1.05em;
-}
 /*
-===================
+ ===================
 Design Styles Setup
 ===================
 */
+
 
 /*
 =======
 Devices
 =======
 */
-@media all and (max-width: 480px) {
 
-    body h1, h2 {
-      padding: 5px;
-      margin: 10px;
-      font-size: 1.75em;
-    }
-  body h2{
+ @media all and (max-width: 480px) {
+     body h1, h2 {
          padding: 5px;
-      margin: 10px;
-  font-size: 1.2em;
-  }
-  header img {
-    display: flex;
-    flex: 1 1 50%;
-  }
-
-nav.topMenu{
-  display: flex;
-  -webkit-display: flex;
-  font-size: 1.2em;
-  background: lightgray;
-  border-bottom: 2px dotted gray;
-  justify-content: space-around;
-
-}
-nav.topMenu ul {
-
-  list-style: none;
-  display: flex;
-  -webkit-display: flex;
-}
-nav.topMenu ul li {
-  padding: 0.5em;
-  flex: auto;
-  text-align: center;
-  vertical-align: baseline;
-}
-nav.topMenu ul li a {
-  text-decoration: none;
-  color: slateblue;
-}
-}
-
-@media all and (min-width: 481px) {
-
-
-    body h1, h2 {
-      padding: 5px;
-      margin: 10px;
+         margin: 10px;
+         font-size: 1.75em;
     }
-  body h1 {
-  font-size: 1.25em;
-  }
-  header img {
-    display: flex;
-    flex: 1 1 50%;
-  }
-}
-  @media all and (min-width: 750px) {
-
-
-      body h1, h2 {
-        padding: 5px;
-        margin: 10px;
-      }
-    body h1 {
-    font-size: 2em;
+     body h2{
+         padding: 5px;
+         margin: 10px;
+         font-size: 1.2em;
     }
-    header img {
-      display: flex;
-      flex: 1 1 50%;
+     header img {
+         display: flex;
+         flex: 1 1 50%;
+    }
+     nav.topMenu{
+         display: flex;
+         -webkit-display: flex;
+         font-size: 1.2em;
+         background: lightgray;
+         border-bottom: 2px dotted gray;
+         justify-content: space-around;
+    }
+     nav.topMenu ul {
+         list-style: none;
+         display: flex;
+         -webkit-display: flex;
+    }
+     nav.topMenu ul li {
+         padding: 0.5em;
+         flex: auto;
+         text-align: center;
+         vertical-align: baseline;
+    }
+     nav.topMenu ul li a {
+         text-decoration: none;
+         color: slateblue;
     }
 }
-/*
-===========
-Device End
-===========
-*/
+ @media all and (min-width: 481px) {
+     body h1, h2 {
+         padding: 5px;
+         margin: 10px;
+    }
+     body h1 {
+         font-size: 1.25em;
+    }
+     header img {
+         display: flex;
+         flex: 1 1 50%;
+    }
+}
+ @media all and (min-width: 750px) {
+     body h1, h2 {
+         padding: 5px;
+         margin: 10px;
+    }
+     body h1 {
+         font-size: 2em;
+    }
+     header img {
+         display: flex;
+         flex: 1 1 50%;
+    }
+}
+/* =========== Device End =========== */
